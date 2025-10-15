@@ -1,5 +1,0 @@
-# Dirsearch started Sat Jul 26 14:25:43 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://94.237.57.211:35449/
-
-404   555B   http://94.237.57.211:35449/404.html
-403   555B   http://94.237.57.211:35449/assets/
-301   169B   http://94.237.57.211:35449/assets    -> REDIRECTS TO: http://94.237.57.211/assets/
