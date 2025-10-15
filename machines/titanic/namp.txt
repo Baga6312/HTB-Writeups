@@ -1,0 +1,11 @@
+# Nmap 7.95 scan initiated Mon Apr  7 16:34:28 2025 as: /usr/lib/nmap/nmap --privileged -sV -oN namp.txt 10.10.11.55
+Nmap scan report for 10.10.11.55 (10.10.11.55)
+Host is up (0.80s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.52
+Service Info: Host: titanic.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr  7 16:39:44 2025 -- 1 IP address (1 host up) scanned in 316.01 seconds

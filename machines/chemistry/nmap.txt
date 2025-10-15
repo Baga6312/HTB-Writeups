@@ -1,0 +1,14 @@
+# Nmap 7.95 scan initiated Thu Jan 30 03:46:52 2025 as: /usr/lib/nmap/nmap -p- -sV -sS -Pn -v -oN nmap.txt -T5 10.10.11.38
+Increasing send delay for 10.10.11.38 from 0 to 5 due to 459 out of 1147 dropped probes since last increase.
+Warning: 10.10.11.38 giving up on port because retransmission cap hit (2).
+Nmap scan report for 10.10.11.38
+Host is up (0.083s latency).
+Not shown: 64405 closed tcp ports (reset), 1128 filtered tcp ports (no-response)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.11 (Ubuntu Linux; protocol 2.0)
+5000/tcp open  http    Werkzeug httpd 3.0.3 (Python 3.9.5)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jan 30 03:58:31 2025 -- 1 IP address (1 host up) scanned in 699.27 seconds

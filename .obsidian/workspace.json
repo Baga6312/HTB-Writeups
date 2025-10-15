@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "ad1c1fd0848d22f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "058c8d0a336d69c6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8e818064421d94e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "machines/artificial/artificial.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "artificial"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "79a291a34f9d6ea3",
+    "type": "split",
+    "children": [
+      {
+        "id": "12a16c2b0288a4fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bfc2b4c15c4dc3b1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b04be392b39bdac6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f22218cfcfc2cfff",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "906421fb03648ac4",
+    "type": "split",
+    "children": [
+      {
+        "id": "479aee7e0db67fc0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1aa92c730c415564",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "b9b0fb5a40d72733",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "ca43ed6661c1e369",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8aabb688a2b9680c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Pasted image 20250114192725.png.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Pasted image 20250114192725.png"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b8e818064421d94e",
+  "lastOpenFiles": [
+    "machines/underpass/UnderPass.md",
+    "machines/artificial/artificial.md",
+    "machines/voleur/voleur.md",
+    "machines/artificial",
+    "machines/Untitled.md",
+    "machines/outbound/outbound.md",
+    "machines/voleur",
+    "machines/mirage/mirage.md",
+    "machines/outbound",
+    "machines/era/era.md",
+    "machines/mirage",
+    "machines/editor/editor.md",
+    "machines/era",
+    "machines/CodePartTwo/codePartTwo.md",
+    "machines/editor",
+    "machines/Previous/previous.md",
+    "machines/CodePartTwo",
+    "machines/guardian/guardian.md",
+    "machines/Previous",
+    "machines/soulmates/soulmates.md",
+    "machines/guardian",
+    "machines/hacknet/hacknet.md",
+    "machines/soulmates",
+    "machines/expressway/expressway.md",
+    "machines/imagery/imagery.md",
+    "machines/Certificates/certificates.md",
+    "machines/trickster/trickster.md",
+    "machines/TwoMillion/TwoMillion.md",
+    "machines/titanic/titanic.md",
+    "machines/signed/signed.md",
+    "machines/Strutted/bob.png",
+    "machines/escapeTwo/escapeTwo.md",
+    "machines/sightless/Sightless.md",
+    "machines/sea/sea.md",
+    "machines/linkvortex/LinkVortex.md",
+    "machines/editorial/editorial.md",
+    "machines/dog/dog.md",
+    "CTF/THM/challenges/glitch/rose.jpg",
+    "programming/ricing-bspwm/Pasted image 20240824094437.png",
+    "Pasted image 20250603185247.png",
+    "CPS/sem-2/Computer-Vision/WhatsApp Image 2024-04-30 at 10.13.23 PM.jpeg",
+    "CPS/sem-2/emploit.jpeg",
+    "CPS/sem-2/projects/ComputerVision/20250501145710.png",
+    "CPS/sem-2/projects/ComputerVision/20250501145945.png",
+    "CPS/sem-2/projects/ComputerVision/20250501145655.png",
+    "CPS/sem-2/projects/ComputerVision/20250501145651.png"
+  ]
+}

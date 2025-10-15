@@ -1,0 +1,10 @@
+{
+  "cssTheme": "Serenity",
+  "enabledCssSnippets": [
+    "osbd",
+    "pdf"
+  ],
+  "accentColor": "#ffffff",
+  "theme": "obsidian",
+  "baseFontSize": 16
+}

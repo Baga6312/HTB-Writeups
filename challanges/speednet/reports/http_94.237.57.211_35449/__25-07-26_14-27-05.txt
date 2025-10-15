@@ -1,0 +1,5 @@
+# Dirsearch started Sat Jul 26 14:29:46 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://94.237.57.211:35449/ -w /usr/share/seclists/Discovery/Web-Content/big.txt
+
+301   169B   http://94.237.57.211:35449/assets    -> REDIRECTS TO: http://94.237.57.211/assets/
+301   169B   http://94.237.57.211:35449/emails    -> REDIRECTS TO: http://94.237.57.211/emails/
+400    18B   http://94.237.57.211:35449/graphql
