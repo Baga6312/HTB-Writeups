@@ -105,5 +105,6 @@ and finally importing our model will give us a shell
 
 <img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251017184622.png">
 
+it didnt work ... 
 
-<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251017185225.png">
+
