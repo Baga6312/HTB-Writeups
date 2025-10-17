@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "challanges/crypto/baby_time_capsule/babyTimeCapsule.md",
+                "file": "machines/titanic/titanic.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "babyTimeCapsule"
+              "title": "titanic"
             }
           }
         ]
@@ -169,6 +169,7 @@
   },
   "active": "b8e818064421d94e",
   "lastOpenFiles": [
+    "challanges/crypto/baby_time_capsule/babyTimeCapsule.md",
     "challanges/crypto/crypto_the_last_dance/TheLastDance.md",
     "challanges/challanges.md",
     "challanges/web/web.md",
@@ -184,7 +185,6 @@
     "challanges/foren/FakeBoost/FakeBoost.md",
     "challanges/foren/Forensics.md",
     "challanges/blockchain/cast and destory.md",
-    "challanges/crypto/baby_time_capsule/babyTimeCapsule.md",
     "challanges/crypto/crypto_spg/cryptoSPG.md",
     "challanges/crypto/crypto_initialization/initialization.md",
     "challanges/crypto/crypto_digital_safety_annex/digital_safety_annex.md",
