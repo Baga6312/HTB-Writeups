@@ -92,13 +92,13 @@ model.save("exploit.h5")
 
 I always use busybox since its found on every linux distro . 
 
---- 
-generating our model 
+### generating our model 
 ```cmd
 python3 exploit.py 
 ```
 
 opening a listener on our machine 
+*** 
 <img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251017165134.png">
 and finally importing our model will give us a shell 
 
