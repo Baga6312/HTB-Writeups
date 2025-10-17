@@ -95,7 +95,7 @@ Finished
 
 following to the page  `titanic.htb`  .. clicking the button `book now` will prompt this 
 
-![[./assets/Pasted image 20250226185929.png]]
+<img src="./assets/Pasted image 20250226185929.png">
 
 further investigation with burp 
 
