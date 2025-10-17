@@ -23,9 +23,7 @@ Nmap done: 1 IP address (1 host up) scanned in 218.67 seconds
 
 adding the domain to our `/etc/hosts `
 
-```bash 
-sudo echo "10.10.11.74     artificial.htb" >> /etc/hosts
-```
+`sudo echo "10.10.11.74     artificial.htb" >> /etc/hosts`
 
 simple looking ui 
 <img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251017162502.png">
