@@ -15,7 +15,10 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 some http server on port 5000 
 
-![[Pasted image 20250130040206.png]]
+
+
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/chemistry/img/Pasted%20image%2020250130045656.png">
+
 
 its some CIF file analyser 
 
