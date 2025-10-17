@@ -169,6 +169,7 @@
   },
   "active": "b8e818064421d94e",
   "lastOpenFiles": [
+    "README.md",
     "challanges/crypto/baby_time_capsule/babyTimeCapsule.md",
     "challanges/crypto/crypto_the_last_dance/TheLastDance.md",
     "challanges/challanges.md",
@@ -197,7 +198,6 @@
     "machines/voleur",
     "machines/mirage/mirage.md",
     "machines/outbound",
-    "machines/era/era.md",
     "machines/mirage",
     "machines/era",
     "machines/editor",
