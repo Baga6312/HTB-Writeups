@@ -20,6 +20,18 @@
               "icon": "lucide-file",
               "title": "artificial"
             }
+          },
+          {
+            "id": "df9cbe572ca79602",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "machines/artificial/assets/Pasted image 20251017162855.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20251017162855"
+            }
           }
         ]
       }
@@ -169,13 +181,14 @@
   },
   "active": "bfc2b4c15c4dc3b1",
   "lastOpenFiles": [
+    "machines/artificial/assets/Pasted image 20251017165134.png",
     "machines/artificial/assets/Pasted image 20251017162855.png",
-    "Pasted image 20251017162720.png",
-    "machines/artificial/assets/Pasted image 20251017162718.png",
     "machines/artificial/artificial.md",
+    "machines/artificial/assets/Pasted image 20251017162718.png",
     "machines/artificial/assets/Pasted image 20251017162502.png",
-    "machines/titanic/titanic.md",
     "machines/chemistry/Chemistry.md",
+    "machines/titanic/titanic.md",
+    "Pasted image 20251017162720.png",
     "machines/artificial/assets",
     "README.md",
     "challanges/crypto/baby_time_capsule/babyTimeCapsule.md",
@@ -213,7 +226,6 @@
     "programming/ricing-bspwm/Pasted image 20240824094437.png",
     "Pasted image 20250603185247.png",
     "CPS/sem-2/Computer-Vision/WhatsApp Image 2024-04-30 at 10.13.23 PM.jpeg",
-    "CPS/sem-2/emploit.jpeg",
-    "CPS/sem-2/projects/ComputerVision/20250501145710.png"
+    "CPS/sem-2/emploit.jpeg"
   ]
 }
