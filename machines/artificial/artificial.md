@@ -107,4 +107,81 @@ and finally importing our model will give us a shell
 
 it didnt work ... 
 
+<hr>
+
+after digging a lil bit i found out the reason , it appeared that i need to boot up an entier container with that specific `Dockerfile` so just i can generate that `.h5` file 
+```
+docker build -t tensorflow-app .
+```
+
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251018164048.png">
+
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251018164228.png">
+
+an copying it to our machine , its a tedious task for me cuz i m doing everything from WSL , but first copying it from the container , and here the command if someone need it 
+```
+sudo docker cp 1b420c3ceba3:/code/exploit.h5 ./exploit.h5
+```
+
+uploading the model and done :)) , we got a shell 
+
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251018164755.png">
+## PrivEscalation 
+
+we start the usual with making a fully interactive shell 
+```
+script /dev/null -c bash
+export TERM=xterm
+```
+
+we found another user called `gael` , and from i found something in the `/opt` folder 
+
+```
+total 36
+drwxr-xr-x   8 root root 4096 Oct 18 10:39 .
+drwxr-xr-x  18 root root 4096 Mar  3  2025 ..
+drwxr-xr-x   5 root root 4096 Oct 18 16:00 backrest
+-r--------   1 root root  155 Oct 18 10:39 config
+drwx------ 258 root root 4096 Oct 18 10:39 data
+drwx------   2 root root 4096 Oct 18 10:39 index
+drwx------   2 root root 4096 Oct 18 10:39 keys
+drwx------   2 root root 4096 Oct 18 10:52 locks
+drwx------   2 root root 4096 Oct 18 10:39 snapshots
+```
+it appears like structure for something , but nothing interresting , altho , i found a local port open 
+
+```
+app@artificial:/opt$ ss -tulpn
+ss -tulpn
+Netid   State    Recv-Q   Send-Q     Local Address:Port     Peer Address:Port   Process
+udp     UNCONN   0        0          127.0.0.53%lo:53            0.0.0.0:*
+tcp     LISTEN   0        4096           127.0.0.1:9898          0.0.0.0:*
+tcp     LISTEN   0        511              0.0.0.0:80            0.0.0.0:*
+tcp     LISTEN   0        4096       127.0.0.53%lo:53            0.0.0.0:*
+tcp     LISTEN   0        128              0.0.0.0:22            0.0.0.0:*
+tcp     LISTEN   0        2048           127.0.0.1:5000          0.0.0.0:*       users:(("gunicorn",pid=38371,fd=7),("gunicorn",pid=22263,fd=7),("gunicorn",pid=21324,fd=7),("gunicorn",pid=968,fd=7),("gunicorn",pid=805,fd=7))
+tcp     LISTEN   0        511                 [::]:80               [::]:*
+tcp     LISTEN   0        128                 [::]:22               [::]:*
+```
+
+```
+app        22263  0.4 10.6 876352 425172 ?       Sl   15:18   0:13 /usr/bin/python3 /usr/bin/gunicorn -w 4 --error-logfile /dev/null --access-logfile /dev/null app:app -b 127.0.0.1:5000
+app        56293  0.0  0.0   6300   716 pts/3    S+   16:08   0:00 grep --color=auto 22263
+```
+nothing interesting 
+and i alsofound this `users.db` file 
+
+theres two tables 
+
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251018171309.png">
+
+and look at that.. we found hash for `gael`
+
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251018171439.png">
+
+cracking that hash in crackstation getting us this 
+
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251018171610.png">
+
+
 
