@@ -183,5 +183,30 @@ cracking that hash in crackstation getting us this
 
 <img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251018171610.png">
 
+trying that `mattp005numbertwo` password on `gael` 
 
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251018172046.png">
+## Root 
+
+i missed a port i found out earlier , it was on `8989` , after forwarding it ,it got me this 
+
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251018172751.png">
+
+yeah whever , gael creds didnt work and the creds are stored on the config file which is protected by `root` , altho , theres a folder `backrest` that we can read 
+```
+total 51116
+drwxr-xr-x 5 root root         4096 Oct 18 16:30 .
+drwxr-xr-x 8 root root         4096 Oct 18 10:39 ..
+-rwxr-xr-x 1 app  ssl-cert 25690264 Feb 16  2025 backrest
+drwxr-xr-x 3 root root         4096 Mar  3  2025 .config
+-rwxr-xr-x 1 app  ssl-cert     3025 Mar  3  2025 install.sh
+-rw------- 1 root root           64 Mar  3  2025 jwt-secret
+-rw-r--r-- 1 root root        77824 Oct 18 16:30 oplog.sqlite
+-rw------- 1 root root            0 Mar  3  2025 oplog.sqlite.lock
+-rw-r--r-- 1 root root        32768 Oct 18 16:30 oplog.sqlite-shm
+-rw-r--r-- 1 root root            0 Oct 18 16:30 oplog.sqlite-wal
+drwxr-xr-x 2 root root         4096 Mar  3  2025 processlogs
+-rwxr-xr-x 1 root root     26501272 Mar  3  2025 restic
+drwxr-xr-x 3 root root         4096 Oct 18 16:30 tasklogs
+```
 

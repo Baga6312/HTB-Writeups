@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "29ad9b68c83591fd",
+        "id": "5e583b254b7bd1a0",
         "type": "tabs",
         "children": [
           {
-            "id": "5f8f68d5066a1b7c",
+            "id": "ce7294a2b9bf316d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 201.5
   },
   "right": {
     "id": "906421fb03648ac4",
@@ -167,19 +167,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5f8f68d5066a1b7c",
+  "active": "ce7294a2b9bf316d",
   "lastOpenFiles": [
-    "machines/artificial/assets/Pasted image 20251018163957.png",
+    "machines/artificial/assets/Pasted image 20251018172046.png",
     "machines/artificial/artificial.md",
-    "machines/artificial/assets/Pasted image 20251018171610.png",
+    "machines/artificial/assets/Pasted image 20251018172751.png",
+    "machines/artificial/assets/Pasted image 20251018172746.png",
     "machines/artificial/assets/Pasted image 20251018171439.png",
+    "machines/artificial/assets/Pasted image 20251018163957.png",
+    "machines/artificial/assets/Pasted image 20251018171610.png",
     "machines/artificial/assets/Pasted image 20251018171436.png",
     "machines/artificial/assets/Pasted image 20251018171435.png",
     "machines/artificial/assets/Pasted image 20251018171309.png",
     "machines/artificial/assets/Pasted image 20251018164048.png",
-    "machines/artificial/assets/Pasted image 20251018164755.png",
-    "machines/artificial/assets/Pasted image 20251018164228.png",
-    "machines/artificial/assets/Pasted image 20251018164208.png",
     "machines/chemistry/Chemistry.md",
     "machines/titanic/titanic.md",
     "machines/artificial/assets",
