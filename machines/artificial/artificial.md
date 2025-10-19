@@ -256,3 +256,7 @@ it does not seem to have known privilage escalation exploit this version of back
 creating a simple repo will get us this 
 
 <img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251019160343.png">
+trying to create a repo , i found one of the hooks has `command` variable 
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251019161155.png">
+
+doesnt look suspicious to me , 
