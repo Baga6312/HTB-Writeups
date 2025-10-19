@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5e583b254b7bd1a0",
+        "id": "62e9568b240d1564",
         "type": "tabs",
         "children": [
           {
-            "id": "ce7294a2b9bf316d",
+            "id": "fc8d863eddd9b233",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -167,19 +167,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce7294a2b9bf316d",
+  "active": "fc8d863eddd9b233",
   "lastOpenFiles": [
-    "machines/artificial/assets/Pasted image 20251018172046.png",
+    "machines/artificial/assets/Pasted image 20251019155104.png",
     "machines/artificial/artificial.md",
+    "machines/artificial/assets/Pasted image 20251019160347.png",
+    "machines/artificial/assets/Pasted image 20251019160343.png",
+    "machines/artificial/assets/Pasted image 20251019160331.png",
+    "machines/artificial/assets/Pasted image 20251019155116.png",
+    "machines/artificial/assets/Pasted image 20251019154437.png",
+    "machines/hercules/hercules.md",
+    "machines/hercules",
+    "machines/artificial/assets/Pasted image 20251018172046.png",
     "machines/artificial/assets/Pasted image 20251018172751.png",
     "machines/artificial/assets/Pasted image 20251018172746.png",
     "machines/artificial/assets/Pasted image 20251018171439.png",
-    "machines/artificial/assets/Pasted image 20251018163957.png",
-    "machines/artificial/assets/Pasted image 20251018171610.png",
-    "machines/artificial/assets/Pasted image 20251018171436.png",
-    "machines/artificial/assets/Pasted image 20251018171435.png",
-    "machines/artificial/assets/Pasted image 20251018171309.png",
-    "machines/artificial/assets/Pasted image 20251018164048.png",
     "machines/chemistry/Chemistry.md",
     "machines/titanic/titanic.md",
     "machines/artificial/assets",
@@ -204,7 +206,6 @@
     "challanges/crypto/crypto_initialization/initialization.md",
     "challanges/crypto/crypto_digital_safety_annex/digital_safety_annex.md",
     "machines/underpass/UnderPass.md",
-    "machines/voleur/voleur.md",
     "machines/artificial",
     "machines/voleur",
     "machines/outbound",
@@ -212,7 +213,6 @@
     "machines/era",
     "machines/editor",
     "machines/CodePartTwo",
-    "machines/Previous",
-    "machines/guardian"
+    "machines/Previous"
   ]
 }

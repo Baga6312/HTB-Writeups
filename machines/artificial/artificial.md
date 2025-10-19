@@ -188,7 +188,7 @@ trying that `mattp005numbertwo` password on `gael`
 <img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251018172046.png">
 ## Root 
 
-i missed a port i found out earlier , it was on `8989` , after forwarding it ,it got me this 
+i missed a port i found earlier , it was on `8989` , after forwarding it ,it got me this 
 
 <img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251018172751.png">
 
@@ -210,3 +210,49 @@ drwxr-xr-x 2 root root         4096 Mar  3  2025 processlogs
 drwxr-xr-x 3 root root         4096 Oct 18 16:30 tasklogs
 ```
 
+hold up !! theres the resitic command which is a backup binary .. so there must be a backup but where ?? 
+
+```
+gael@artificial:/var/backups$ ls -al
+total 51972
+drwxr-xr-x  2 root root     4096 Oct 18 06:25 .
+drwxr-xr-x 13 root root     4096 Jun  2 07:38 ..
+-rw-r--r--  1 root root    51200 Oct 18 06:25 alternatives.tar.0
+-rw-r--r--  1 root root    38602 Jun  9 10:48 apt.extended_states.0
+-rw-r--r--  1 root root     4253 Jun  9 09:02 apt.extended_states.1.gz
+-rw-r--r--  1 root root     4206 Jun  2 07:42 apt.extended_states.2.gz
+-rw-r--r--  1 root root     4190 May 27 13:07 apt.extended_states.3.gz
+-rw-r--r--  1 root root     4383 Oct 27  2024 apt.extended_states.4.gz
+-rw-r--r--  1 root root     4379 Oct 19  2024 apt.extended_states.5.gz
+-rw-r--r--  1 root root     4367 Oct 14  2024 apt.extended_states.6.gz
+-rw-r-----  1 root root 52357120 Mar  4  2025 backrest_backup.tar.gz
+-rw-r--r--  1 root root      268 Sep  5  2024 dpkg.diversions.0
+-rw-r--r--  1 root root      135 Sep 14  2024 dpkg.statoverride.0
+-rw-r--r--  1 root root   696841 Jun  9 10:48 dpkg.status.0
+```
+
+whever its under root , wait . hold up , theres a  file on `/var/backups` i found it using this command 
+
+```
+find / -perm g=r -group sysadm 2>/dev/null 
+```
+
+since we are part of group called `sysadmin`
+
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251019154437.png">
+
+and we found it , creds for backrest are `backrest_root` and that looks like a base64 , converting it giving us this 
+
+```
+$2a$10$cVGIy9VMXQd0gM5ginCmjei2kZR/ACMMkSsspbRutYP58EBZz/0QO
+```
+
+decrypting it with `john` giving us this ?
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251019155116.png">
+well anyway we have `backrest_root` and `!@#$%^` , moving on to get a shell as root
+
+it does not seem to have known privilage escalation exploit this version of backrest so we have to find it ourself 
+
+creating a simple repo will get us this 
+
+<img src="https://raw.githubusercontent.com/Baga6312/HTB-Writeups/refs/heads/main/machines/artificial/assets/Pasted image 20251019160343.png">
