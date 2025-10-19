@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "62e9568b240d1564",
+        "id": "498d350c23180f06",
         "type": "tabs",
         "children": [
           {
-            "id": "fc8d863eddd9b233",
+            "id": "37ebf8b0cdefb937",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "machines/artificial/assets/Pasted image 20251019161155.png"
+                "file": "machines/hercules/hercules.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251019161155"
+              "icon": "lucide-file",
+              "title": "hercules"
             }
           }
         ]
@@ -165,10 +167,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bfc2b4c15c4dc3b1",
+  "active": "37ebf8b0cdefb937",
   "lastOpenFiles": [
-    "machines/artificial/artificial.md",
     "machines/artificial/assets/Pasted image 20251019161155.png",
+    "machines/artificial/artificial.md",
     "machines/artificial/assets/Pasted image 20251019161144.png",
     "machines/artificial/assets/Pasted image 20251019155104.png",
     "machines/artificial/assets/Pasted image 20251019160347.png",
